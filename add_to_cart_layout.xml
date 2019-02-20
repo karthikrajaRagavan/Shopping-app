@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@android:color/white"
+        android:layout_margin="8dp">
+     <ImageView
+     android:layout_width="80dp"
+     android:layout_height="80dp"
+     android:id="@+id/img_cart_product" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_cart_product_name"
+                android:text="Milk Tea"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+               >
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/txt_count"
+                    android:layout_alignParentRight="true"
+                    app:backGroundColor="@color/colorAccent"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edt_comment"
+        android:background="@android:color/white"
+        android:hint="Comment"
+        android:lines="1"
+        android:minLines="2"
+        android:inputType="textMultiLine"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_margin="8dp">
+       <LinearLayout
+           android:layout_margin="8dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+
+           android:layout_height="match_parent">
+
+           <!--group 1-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:text="choose Color"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:text="REQUIRED"
+                   android:padding="4dp"
+                   android:layout_alignParentRight="true"
+                   android:background="@drawable/text_round_gray"
+                   android:textColor="@android:color/white"
+
+                   android:textSize="14sp"
+                   android:textStyle="bold"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_marginTop="8dp"
+               android:background="@android:color/white"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+         <RadioGroup
+             android:background="@android:color/white"
+             android:orientation="vertical"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+             <RadioButton
+                 android:id="@+id/rdi_Red"
+                 android:text=" Red"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+             <RadioButton
+                 android:id="@+id/rdi_Blue"
+                 android:text=" Blue"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+             <RadioButton
+                 android:id="@+id/rdi_Green"
+                 android:text=" Green"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+
+         </RadioGroup>
+
+           </RelativeLayout>
+
+           <!--group 2-->
+           <RelativeLayout
+               android:layout_marginTop="8dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:text="choose Size"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:text="REQUIRED"
+                   android:padding="4dp"
+                   android:layout_alignParentRight="true"
+                   android:background="@drawable/text_round_gray"
+                   android:textColor="@android:color/white"
+
+                   android:textSize="14sp"
+                   android:textStyle="bold"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_marginTop="8dp"
+               android:background="@android:color/white"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <RadioGroup
+                   android:background="@android:color/white"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                   <RadioButton
+                       android:id="@+id/rdi_SizeM"
+                       android:text=" Size M"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <RadioButton
+                       android:id="@+id/rdi_SizeL"
+                       android:text=" Size L"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+
+               </RadioGroup>
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_marginRight="8dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:text="+$0"
+                       android:textSize="18dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:text="+$3"
+                       android:textSize="18dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+           </RelativeLayout>
+
+
+   </LinearLayout>
+   </ScrollView>
+</LinearLayout>
